@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h1>  The HTMLCollection Object</h1>
+<p>
+    The getElementsByTagName() method returns an HTMLCollection object.
+
+An HTMLCollection object is an array-like list (collection) of HTML elements.
+
+The following code selects all
+</p> 
+<p> elements in a document </p>
+
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello Norway!</p>
+
+<p id="demo"></p>
+
+<script>
+const myCollection = document.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML = "The innerHTML of the second paragraph is: " + myCollection[1].innerHTML;
+
+</script>
+    
+</body>
+</html>
