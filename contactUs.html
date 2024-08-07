@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Array methods to contact us</h1>
+    <ul>
+        <li class="contact-item"></li>
+        <li class="contact-item"></li>
+        <li class="contact-item"></li>
+        <li class="contact-item"></li>
+    </ul>
+
+    <script>
+        var contactUs = ["Name: Abc", "Age: 19", "Email: abc@gmail.com", "Contact No: 03122454846"];
+        var contactItems = document.querySelectorAll(".contact-item");
+
+        for (let i = 0; i < contactUs.length; i++) {
+            contactItems[i].textContent = contactUs[i];
+        }
+    </script>
+</body>
+</html>
